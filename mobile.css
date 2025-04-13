@@ -1,0 +1,1095 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+h1{
+    font-size: 32px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+body{
+  margin: 0;
+}
+.flex{
+    display: flex;
+  }
+  .container{
+    max-width: 540px;
+    margin: 0 auto;  
+  }
+  nav{
+    background-image: radial-gradient(rgba(39, 174, 96, 1), rgba(118, 198, 151, 0.73));
+  }
+  /* HEADER---------------------------------------------------------------------------------------------------- */
+  .header_menu{
+    /* justify-content: space-around;        
+    padding-top: 20px; */
+
+    display: none;
+  }
+  .header_menu ul{
+    list-style: none;
+    color: white;
+  }
+  .header_menu a{
+    text-decoration: none;
+    color: white;
+  }
+  .header_items{
+    justify-content: space-around;
+  }
+  .header_items li{
+    margin: 0 25px;
+  }
+  .header_buttons{
+    justify-content: space-around;
+  }
+  .header_buttons button{
+    height: 41px;
+    margin: 0 25px;
+    border: solid 1px white;
+    border-radius: 6px;
+    background-color: rgba(118, 198, 151, 0.73);
+    color: white;
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+  .header_buttons button:hover{
+    background: rgba(252, 163, 17, 1);
+    ;
+  }
+ 
+
+
+  .mobile_menu{
+    /* display: none; */
+  }
+  .mobile_menu_header{
+    justify-content: space-between;
+    margin: 0;
+    padding: 14px 10px 0 10px;
+  }
+  .mobile_menu_header span{
+    padding-left: 10px;
+  }
+  .mobile_menu ul{
+    list-style: none;
+  }
+  .burger_button img{
+    width: 40px;
+  }
+
+
+  .burger_button{
+    border: none;
+    background: none;
+    /* padding: 20px 20px; */
+    cursor: pointer;
+  }
+  
+  .close_burger{
+    visibility: hidden;
+    border: none;
+    background: none;
+    padding: 20px 20px;
+    cursor: pointer;
+  }
+  .mobile_menu_list{
+    position: absolute;
+    z-index: 1;
+    top: -250px;
+    background: radial-gradient(66.8% 299.56% at 66.8% 50%, #27AE60 0%, rgba(118, 198, 151, 1) 100%);
+    width: 100%;
+    left: 0;
+  }
+  .mobile_menu_list li{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    font-size: 14px;
+    margin: 10px;
+    padding-bottom: 5px;
+  }
+  .mobile_menu_list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
+  .mobile_menu_list button{
+    border: solid 1px white;
+    border-radius: 6px;
+    background-color: rgba(118, 198, 151, 0.73);
+    color: white;
+    font-size: 15px;
+    padding: 7px 15px;
+  }
+  .mobile_menu_list button:hover{
+    background: rgba(252, 163, 17, 1);
+  }
+  .mobile_menu_list.open-menu{
+    top: 70px;
+    left: 0;
+}
+   /* BANNER------------------------------------------------------------------------------------ */
+.banner{
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.banner button{
+    cursor: pointer;
+}
+.banner_text{
+    padding: 0 20px 0 80px;;
+}
+.banner_text button{
+    margin-top: 40px;
+    border: solid 1px white;
+    border-radius: 6px;
+    background-color: rgba(118, 198, 151, 0.73);
+    color: white;
+    font-size: 15px;
+    padding: 12px 30px;
+}
+.banner_text button:hover{
+    background: rgba(252, 163, 17, 1);
+}
+.banner_img{
+}
+.woman_img{
+  padding: 30px 20px 0 20px;
+}
+.woman_img img{
+width: 100%;
+}
+.english{
+    display: none;
+    /* position: absolute;
+    top: 205px;
+    right: 435px;
+    border: none;
+    background: none; */
+}
+.spanish{
+    display: none;
+    /* position: absolute;
+    top: 160px;
+    right: 85px;
+    border: none;
+    background: none; */
+}
+.chinese{
+    display: none;
+    /* position: absolute;
+    top: 500px;
+    right: 560px;
+    border: none;
+    background: none; */
+}
+.arab{
+    display: none;
+    /* position: absolute;
+    top: 505px;
+    right: 5px;
+    border: none;
+    background: none; */
+}
+/* WHAT WE TREAT************************************************************************************ */
+.services h1, .services h3, .services p{
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+.services h3{
+  margin: 0;
+  padding: 10px 0;
+}
+.services p{
+  font-weight: 600;
+}
+.services{
+  display: block;
+  margin-top: 40px;
+}
+.services_item{
+  margin: 0 auto;
+  max-width: 270px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.services_item div:first-child{
+  box-shadow: 0px 9px 34px 0px rgba(129, 152, 173, 0.2);
+  border-radius: 30px;
+}
+.services_item img:first-child{
+  width: 100%;
+}
+.services_item img:last-child{
+  width: 24px;
+  display: block;
+  margin: 0 auto;
+}
+/* .services_item img:last-child:focus{
+  display: block;
+} */
+/* HOW IT WORKS************************************************************************************** */
+.instruction h1, .instruction h3, .instruction p{
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+
+.instruction{
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+.instruction .container{
+  max-width: 900px;
+}
+.instruction img{
+ width: 64px;
+}
+.instruction_item{
+  max-width: 240px;
+  margin: 0 auto;
+}
+.instruction_item div:first-child{
+  box-shadow: 0px 9px 34px 0px rgba(129, 152, 173, 0.2);
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.instruction button{
+  margin:  40px 0;
+  background: rgba(47, 181, 76, 1);
+  padding: 12px 30px;
+  border: rgba(47, 181, 76, 1);
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+/* TESTIMONIALS************************************************************************************** */
+.testimonials h1, .testimonials h3{
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+.testimonials p{
+  color: rgba(51, 51, 51, 1)
+}
+.testimonials ul{
+  color: rgba(129, 152, 173, 1);
+  list-style: none;
+}
+.testimonials{
+  background: rgba(253, 255, 227, 1);
+  /* margin: 25px 10px 0 10px; */
+  border-radius: 40px;
+  padding: 1px 0 25px 0px;
+  text-align: center;
+}
+.testimonials_wrap{
+  display: block;
+  padding: 0 30px 0 30px;
+}
+.testimonials_item{
+  box-shadow: 0px 9px 34px 0px rgba(142, 167, 190, 0.2);
+  background: rgba(255, 255, 255, 1);
+border-radius: 20px;
+text-align: left;
+padding: 20px;
+margin-bottom: 20px;
+}
+.testimonials_head{
+  display: flex;
+}
+.arrow{
+  display: none;
+}
+.testimonials button{
+  background: rgba(47, 181, 76, 1);
+  padding: 12px 30px;
+  border: rgba(47, 181, 76, 1);
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+/* PRICE******************************************************************************************** */
+.price h1, .price h3{
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+}
+.price ul{
+  color: rgba(51, 51, 51, 1);
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  gap: 35px;
+}
+.price{
+text-align: center;
+/* margin: 25px 10px 0 10px; */
+}
+.price_wrap{
+  max-width: 972px;
+  margin: 0 auto;
+  text-align: left;
+}
+.price_wrap div:first-child{
+  background: rgba(253, 255, 227, 1);
+
+}
+.price_item{
+  box-shadow: 0px 8px 34px 0px rgba(129, 152, 173, 0.2);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.price_item ul{
+  display: block;
+  padding: 1px 20px 20px 20px;
+  text-align: center;
+}
+.price_item button{
+  margin-top: 14px;
+  background: rgba(47, 181, 76, 1);
+  padding: 12px 30px;
+  border: rgba(47, 181, 76, 1);
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 34px;
+}
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(230, 241, 248, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 34px;
+  width: 34px;
+  left: 0px;
+  background: rgba(47, 181, 76, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider:before {
+  /* -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px); */
+  transform: translateX(37px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/* NEWSLETTER**************************************************************************************** */
+.newsletter h1{
+  color: rgba(47, 181, 76, 1);
+}
+.newsletter h3{
+  color: rgba(129, 152, 173, 1);
+  max-width: 445px;
+}
+.newsletter{
+  background: rgba(253, 255, 227, 1);
+  border-radius: 30px;
+  /* margin: 25px 10px 0 10px; */
+}
+.newsletter img{
+display: none;
+}
+.newsletter_wrap{
+  padding: 40px 0 40px 15px;
+  position: relative;
+}
+.subscribe{
+  display: block;
+  text-align: center;
+  max-width: 320px;
+}
+.subscribe button{
+  background: rgba(252, 163, 17, 1);
+  padding: 12px 30px;
+  border:rgba(252, 163, 17, 1);
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.subscribe input{
+  background: rgba(153, 154, 146, 1);
+  opacity: 20%;
+  border: none;
+  border-radius: 6px;
+  width: 260px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.subscribe input:focus-visible{
+  outline: none;
+}
+.subscribe input::placeholder{
+  color:rgb(28, 27, 27);
+  padding-left: 10px;
+}
+/* COMPANIES*************************************************************************************** */
+.companies h1{
+  color: rgba(51, 51, 51, 1);
+ text-align: center;
+}
+.companies{
+  margin-top: 40px;
+  padding: 0 12px;
+}
+.companies_wrap{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 35px;
+  margin-top: 30px;
+}
+/* CONTACT US*************************************************************************************** */
+.contacts h1{
+  color: rgba(20, 33, 61, 1);
+  max-width: 458px;
+}
+.contacts ul{
+  color: rgba(51, 51, 51, 1);
+  font-size: 20px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+}
+.contacts p{
+  color: rgba(129, 152, 173, 1);
+
+}
+.contacts{
+  margin-top: 40px;
+  padding: 0 12px;
+  display: block;
+}
+.contacts_info{
+  padding: 0 10px;
+}
+.contacts_form{
+  text-align: center;
+  background: rgba(47, 181, 76, 1);
+  border-radius: 20px;
+  max-width: 424px;
+  padding: 1px 0 20px 0;
+  margin: 0 auto;
+}
+.contacts_form input{
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 7px 0;
+  opacity: 0.3;
+  border: none;
+}
+.contacts_form input:focus-visible, .contacts_form select:focus-visible{
+  outline: none;
+}
+.contacts_form select{
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  margin: 7px 0;
+  opacity: 0.3;
+  border: none;
+}
+.contacts_form button{
+  width: 139px;
+  height: 40px;
+    border: none;
+    margin-top: 15px;
+    background:  rgba(253, 201, 139, 1);
+    padding: 12px 30px;
+    border:rgba(253, 201, 139, 1);
+    border-radius: 6px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+/* FOOTER***************************************************************************************** */
+.footer{
+  background: rgba(51, 51, 51, 1);
+  margin-top: 50px;
+}
+.footer .container{
+  /* padding-top: 40px; */
+  padding: 40px 20px 50px 20px;
+}
+.footer ul{
+  list-style: none;
+}
+.footer_wrap{
+  justify-content: space-around;
+  /* gap: 70px; */
+}
+.footer_wrap li{
+  margin-top: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.footer_wrap li:first-child{
+  color: rgba(47, 181, 76, 1);
+  font-size: 15px;
+}
+.footer_wrap li:not(:first-child){
+  display: none;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+}
+.footer_wrap div:first-child{
+  text-align: center;
+}
+.footer_wrap button{
+  margin-top: 40px;
+  background: rgba(47, 181, 76, 1);
+  padding: 12px 36px;
+  border:rgba(47, 181, 76, 1);
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+/* MEDIA********************************************************************************************* */
+/* mobile version */
+/* @media(max-width: 576px){
+  .container{
+    max-width: 540px;
+    /* width: 100%; */
+  /* } */
+/* }  */
+/* *************************************************************************************************** */
+/* tablets */
+@media(min-width: 577px) and (max-width: 768px){
+  .container{
+    max-width: 720px;
+    width: 100%;
+  }
+  /* BANNER------------------------------------------------------------------------------------ */
+.banner_img{
+  position: relative;
+}
+.woman_img{
+  text-align: center;
+}
+.woman_img img{
+  width: 70%;
+  }
+  .english img, .spanish img, .chinese img, .arab img{
+    width: 70%;
+  }
+.english{
+  display: block;
+  position: absolute;
+  top: 173px;
+  right: 392px;
+  left: 36px;
+  border: none;
+  background: none;
+}
+.spanish{
+  display: block;
+  position: absolute;
+  top: 167px;
+  right: 40px;
+  border: none;
+  background: none;
+}
+.chinese{
+  display: block;
+  position: absolute;
+  top: 487px;
+  right: 465px;
+  border: none;
+  background: none;
+}
+.arab{
+  display: block;
+  position: absolute;
+  top: 455px;
+  left: 400px;
+  border: none;
+  background: none;
+}
+/* WHAT WE TREAT************************************************************************************ */
+
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 0;
+}
+/* HOW IT WORKS************************************************************************************** */
+.instruction{
+  margin-top: 0;
+  
+}
+.instruction .container{
+ display: flex;
+  flex-wrap: wrap;
+}
+/* .instruction img{
+ width: 64px;
+} */
+.instruction_item{
+  width: 217px;
+  margin-top: 20px;
+}
+/* TESTIMONIALS************************************************************************************** */
+.testimonials{
+  padding: 30px 0;
+}
+.testimonials_wrap{
+  padding: 0 50px;
+}
+/* NEWSLETTER**************************************************************************************** */
+.newsletter_wrap{
+  padding-left: 85px;
+}
+/* CONTACT US*************************************************************************************** */
+.contacts_info {
+  padding: 0 60px;
+}
+.contacts_form{
+  margin: 0 auto;
+}
+/* FOOTER********************************************************************************************* */
+.footer_wrap {
+  justify-content: space-around;
+}
+}
+/* *************************************************************************************************** */
+/* small screens, laptops */
+@media(min-width: 769px) and (max-width: 992px){
+  .container{
+    max-width: 960px;
+    width: 100%;
+  }
+  /* BANNER------------------------------------------------------------------------------------ */
+.banner_img{
+  position: relative;
+}
+.woman_img{
+  text-align: center;
+}
+.woman_img img{
+  width: 70%;
+  }
+  .english img, .spanish img, .chinese img, .arab img{
+    width: 70%;
+  }
+.english{
+  display: block;
+  position: absolute;
+  top: 173px;
+  right: 392px;
+  left: 36px;
+  border: none;
+  background: none;
+}
+.spanish{
+  display: block;
+  position: absolute;
+  top: 167px;
+  right: 40px;
+  border: none;
+  background: none;
+}
+.chinese{
+  display: block;
+  position: absolute;
+  top: 553px;
+  right: 572px;
+  border: none;
+  background: none;
+}
+.arab{
+  display: block;
+  position: absolute;
+  top: 560px;
+  left: 500px;
+  border: none;
+  background: none;
+}
+/* WHAT WE TREAT************************************************************************************ */
+
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 0;
+}
+.services_item{
+  margin: 0px 10px;
+}
+/* HOW IT WORKS************************************************************************************** */
+.instruction{
+  margin-top: 0;
+}
+.instruction .container{
+  display: flex;
+   flex-wrap: wrap;
+ }
+ .instruction_item{
+   width: 217px;
+   margin-top: 20px;
+ }
+ /* TESTIMONIALS************************************************************************************** */
+.testimonials{
+  padding: 30px 0;
+}
+.testimonials_wrap{
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials_item{
+  width: 400%;
+  margin: 0 10px 20px 10px;
+}
+/* PRICE******************************************************************************************** */
+.price .container{
+  padding: 0 20px;
+}
+.price_item ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 56px;
+  margin: 0;
+}
+/* NEWSLETTER**************************************************************************************** */
+.newsletter img{
+  display: block;
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+  }
+  .newsletter_wrap{
+    padding: 40px 0 40px 300px;
+    position: relative;
+  }
+  .subscribe{
+    justify-content: space-between;
+      padding-right: 80px;
+  }
+/* COMPANIES*************************************************************************************** */
+  .companies{
+    margin-top: 60px;
+  }
+  
+/* CONTACT US*************************************************************************************** */
+.contacts{
+  display: flex;
+  margin-top: 90px;
+}
+/* FOOTER********************************************************************************************* */
+.footer_wrap li:not(:first-child){
+  display: block;
+}
+.footer_wrap{
+  padding: 0 15px;
+  justify-content: space-around;
+}
+.footer_item_group{
+  display: flex;
+}
+}
+/* *************************************************************************************************** */
+/* large screens */
+@media(min-width: 993px) and (max-width: 1200px){
+  .container{
+    max-width: 1170px;
+    width: 100%;
+  }
+ /* HEADER---------------------------------------------------------------------------------------------------- */
+ .header_menu{
+  display: flex;
+}
+.mobile_menu_header{
+  display: none;
+}
+.header_menu{
+  justify-content: space-around;
+  padding: 20px 5px 0 10px;
+}
+.banner{
+  display: flex;
+  justify-content: space-around;
+}
+.banner_text{
+  padding: 140px 20px 0 80px;;
+}
+.banner_img{
+  position: relative;
+  padding: 30px 150px 0 0;
+}
+.woman_img{
+  z-index: 1;
+  padding: 25px;
+}
+.woman_img img{
+  width: auto;
+}
+.english{
+  display: block;
+  position: absolute;
+  top: 205px;
+  right: 435px;
+  border: none;
+  background: none;
+}
+.spanish{
+  display: block;
+  position: absolute;
+  top: 160px;
+  right: 85px;
+  border: none;
+  background: none;
+}
+.chinese{
+  display: block;
+  position: absolute;
+  top: 500px;
+  right: 560px;
+  border: none;
+  background: none;
+}
+.arab{
+  display: block;
+  position: absolute;
+  top: 505px;
+  right: 5px;
+  border: none;
+  background: none;
+}
+/* WHAT WE TREAT************************************************************************************ */
+.services .container{
+  display: flex;
+  justify-content: space-around;
+}
+/* HOW IT WORKS************************************************************************************** */
+.instruction .container{
+  display: flex;
+}
+/* TESTIMONIALS************************************************************************************** */
+.testimonials_wrap{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 30px 0 30px;
+}
+.testimonials_item{
+  width: 40%;
+}
+.arrow{
+  display: block;
+  height: 24px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+/* PRICE******************************************************************************************** */
+.price_item ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 56px;
+  margin: 0;
+}
+/* NEWSLETTER**************************************************************************************** */
+.newsletter{
+  margin-top: 164px;
+}
+.newsletter img{
+  display: block;
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+  }
+  .newsletter_wrap{
+    padding: 40px 0 40px 300px;
+    position: relative;
+  }
+  .subscribe{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+      padding-right: 80px;
+  }
+  /* CONTACT US*************************************************************************************** */
+  .contacts .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_wrap li:not(:first-child){
+    display: block;
+  }
+  .footer_item_group{
+    display: flex;
+  }
+}
+/* *************************************************************************************************** */
+@media(min-width: 1201px){
+  .container{
+    max-width: 1170px;
+    width: 100%;
+  }
+ /* HEADER---------------------------------------------------------------------------------------------------- */
+ .header_menu{
+  display: flex;
+}
+.mobile_menu_header{
+  display: none;
+}
+.header_menu{
+  justify-content: space-around;
+  padding: 20px 5px 0 10px;
+}
+.banner{
+  display: flex;
+  justify-content: space-around;
+}
+.banner_text{
+  padding: 140px 20px 0 80px;;
+}
+.banner_img{
+  position: relative;
+  padding: 30px 150px 0 0;
+}
+.woman_img{
+  z-index: 1;
+  padding: 25px;
+}
+.woman_img img{
+  width: auto;
+}
+.english{
+  display: block;
+  position: absolute;
+  top: 205px;
+  right: 435px;
+  border: none;
+  background: none;
+}
+.spanish{
+  display: block;
+  position: absolute;
+  top: 160px;
+  right: 85px;
+  border: none;
+  background: none;
+}
+.chinese{
+  display: block;
+  position: absolute;
+  top: 500px;
+  right: 560px;
+  border: none;
+  background: none;
+}
+.arab{
+  display: block;
+  position: absolute;
+  top: 505px;
+  right: 5px;
+  border: none;
+  background: none;
+}
+/* WHAT WE TREAT************************************************************************************ */
+.services .container{
+  display: flex;
+  justify-content: space-around;
+}
+/* HOW IT WORKS************************************************************************************** */
+.instruction .container{
+  display: flex;
+}
+/* TESTIMONIALS************************************************************************************** */
+.testimonials_wrap{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 30px 0 30px;
+}
+.testimonials_item{
+  width: 40%;
+}
+.arrow{
+  display: block;
+  height: 24px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+/* PRICE******************************************************************************************** */
+.price_item ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 56px;
+  margin: 0;
+}
+/* NEWSLETTER**************************************************************************************** */
+.newsletter{
+  margin-top: 164px;
+}
+.newsletter img{
+  display: block;
+  position: absolute;
+  left: 35px;
+  bottom: 0px;
+  }
+  .newsletter_wrap{
+    padding: 40px 0 40px 300px;
+    position: relative;
+  }
+  .subscribe{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+      padding-right: 80px;
+  }
+  /* CONTACT US*************************************************************************************** */
+  .contacts .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_wrap li:not(:first-child){
+    display: block;
+  }
+  .footer_item_group{
+    display: flex;
+  }
+}
+
+
